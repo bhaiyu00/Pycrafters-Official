@@ -349,7 +349,7 @@ export default function InquiryModal({
               </a>
 
               <a
-                href={`mailto:nishantbarman04k@gmail.com?subject=${encodeURIComponent(
+                href={`mailto:pycraftersofficial@gmail.com?subject=${encodeURIComponent(
                   `New Pycrafters Lead [${confirmationCode}]: ${selectedService}`
                 )}&body=${encodeURIComponent(
                   `Name: ${name}\nEmail: ${email}\nCompany: ${company || 'N/A'}\nService: ${selectedService}\nTimeline: ${timeline}\n\nProject Details:\n${message}`
