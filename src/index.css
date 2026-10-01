@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Syne", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  --color-noir: #030303;
+  --color-surface: #0a0a0a;
+  --color-surface-subtle: #121212;
+  --color-hairline: rgba(255, 255, 255, 0.08);
+  --color-hairline-bright: rgba(255, 255, 255, 0.16);
+  --color-brand-orange: #ff5500;
+  --color-brand-orange-light: #ff6e26;
+  --color-brand-orange-muted: rgba(255, 85, 0, 0.15);
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #030303;
+  color: #f3f3f3;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: #ff5500;
+  color: #ffffff;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Subtle architectural grain */
+.grain-overlay {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Subtle vignette */
+.radial-vignette {
+  background: radial-gradient(circle at 50% 50%, rgba(10, 15, 25, 0) 0%, rgba(3, 3, 3, 0.85) 100%);
+}
+
+/* Orange glow effects */
+.orange-glow-sm {
+  box-shadow: 0 0 20px rgba(255, 85, 0, 0.25);
+}
+
+.orange-glow-lg {
+  box-shadow: 0 0 45px rgba(255, 85, 0, 0.35);
+}
+
+/* Hide scrollbar for clean aesthetic while keeping scrollable */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #030303;
+}
+::-webkit-scrollbar-thumb {
+  background: #222222;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5500;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+
