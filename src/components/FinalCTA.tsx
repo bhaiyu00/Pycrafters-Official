@@ -129,11 +129,19 @@ export default function FinalCTA({ onStartConversation }: FinalCTAProps) {
         <div>
           <span>DIRECT INQUIRIES: </span>
           <a
-            href="mailto:contact@pycrafters.com"
+            href="mailto:pycraftersofficial@gmail.com"
             onClick={() => playMicroClick()}
             className="text-white hover:text-[#FF5500] hover:underline transition-colors"
           >
-            contact@pycrafters.com
+            pycraftersofficial@gmail.com
+          </a>
+          <span className="mx-2 text-neutral-600">·</span>
+          <a
+            href="tel:8959277086"
+            onClick={() => playMicroClick()}
+            className="text-white hover:text-[#FF5500] hover:underline transition-colors"
+          >
+            8959277086
           </a>
         </div>
         <div>
