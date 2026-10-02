@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, MessageCircle, Sparkles } from 'lucide-react';
 import { playMicroClick, playHoverBlip } from '../utils/audio';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -142,6 +142,18 @@ export default function FinalCTA({ onStartConversation }: FinalCTAProps) {
             className="text-white hover:text-[#FF5500] hover:underline transition-colors"
           >
             8959277086
+          </a>
+          <span className="mx-2 text-neutral-600">·</span>
+          <a
+            href="https://wa.me/918959277086"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => playMicroClick()}
+            className="inline-flex items-center gap-1 text-white hover:text-[#FF5500] hover:underline transition-colors"
+            aria-label="Chat with us on WhatsApp"
+          >
+            <MessageCircle className="w-3.5 h-3.5" />
+            WhatsApp
           </a>
         </div>
         <div>

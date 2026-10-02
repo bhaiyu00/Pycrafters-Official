@@ -48,7 +48,7 @@ export default function Footer({ onOpenAdminVault }: FooterProps) {
           {/* Social Links */}
           <div className="flex flex-wrap items-center gap-8 md:gap-12">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/pycrafters?stkn=MWpmOXFxZjhveWhjcQ=="
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => playMicroClick()}
